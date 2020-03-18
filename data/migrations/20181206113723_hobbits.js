@@ -1,12 +1,10 @@
-exports.up = function(knex, Promise) {
-  return knex.schema.createTable('hobbits', tbl => {
-    tbl.increments();
+exports.up = async function(knex) {
+	await knex.schema.createTable("hobbits", (table) => {
+		table.increments()
+		table.text("name").notNullable()
+	})
+}
 
-    tbl.string('name', 255).notNullable();
-  });
-};
-
-exports.down = function(knex, Promise) {
-  // undo the operation in up
-  return knex.schema.dropTableIfExists('hobbits');
-};
+exports.down = async function(knex) {
+	await knex.schema.dropTableIfExists("hobbits")
+}
