@@ -1,14 +1,15 @@
 {
 	"private": true,
 	"scripts": {
+		"test": "cross-env NODE_ENV=test jest --verbose",
 		"server": "nodemon -r dotenv/config index.js",
 		"start": "node index.js"
 	},
 	"devDependencies": {
-		"cross-env": "^7.0.2",
-		"jest": "^25.1.0",
+		"cross-env": "7.0.2",
+		"jest": "25.1.0",
 		"nodemon": "^2.0.2",
-		"supertest": "^4.0.2"
+		"supertest": "4.0.2"
 	},
 	"dependencies": {
 		"cors": "^2.8.5",
@@ -16,5 +17,8 @@
 		"express": "^4.17.1",
 		"knex": "^0.20.8",
 		"sqlite3": "^4.1.1"
+	},
+	"jest": {
+		"testEnvironment": "node"
 	}
 }
