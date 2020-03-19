@@ -7,6 +7,10 @@ beforeEach(async () => {
 	await db.seed.run()
 })
 
+afterAll(async () => {
+	await db.destroy()
+})
+
 test("welcome route", async () => {
 	const res = await supertest(server).get("/")
 	expect(res.statusCode).toBe(200)

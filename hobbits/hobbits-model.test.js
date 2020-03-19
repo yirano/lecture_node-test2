@@ -5,6 +5,10 @@ beforeEach(async () => {
 	await db.seed.run()
 })
 
+afterAll(async () => {
+	await db.destroy()
+})
+
 test("insert", async () => {
 	const res = await hobbitsModel.insert({ name: "bilbo" })
 	expect(res.name).toBe("bilbo")
