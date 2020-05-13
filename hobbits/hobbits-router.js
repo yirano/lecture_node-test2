@@ -5,7 +5,7 @@ const router = express.Router()
 
 router.get("/", async (req, res, next) => {
 	try {
-		res.json(await Hobbits.getAll())
+		res.json(await Hobbits.find())
 	} catch(err) {
 		next(err)
 	}

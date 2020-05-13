@@ -1,6 +1,6 @@
-# Node Server Testing Guided Project
+# Testing the Back End
 
-Guided project for **Node Server Testing** Module.
+Guided project for the **Node Testing 2** module.
 
 ## Prerequisites
 

@@ -1,29 +1,29 @@
 const db = require("../data/config")
 
-module.exports = {
-  insert,
-  update,
-  remove,
-  getAll,
-  findById,
+async function create(data) {
+	return null
 }
 
-async function insert(hobbit) {
-  return null
-}
-
-async function update(id, changes) {
-  return null
+async function update(id, data) {
+	return null
 }
 
 function remove(id) {
-  return null
+	return null
 }
 
-function getAll() {
-  return db("hobbits")
+function find() {
+	return db("hobbits")
 }
 
 function findById(id) {
-  return null
+	return null
+}
+
+module.exports = {
+	create,
+	update,
+	remove,
+	find,
+	findById,
 }
