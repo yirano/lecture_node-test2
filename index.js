@@ -11,7 +11,7 @@ server.use(express.json())
 server.use('/hobbits', hobbitsRouter)
 server.get('/', (req, res) => {
 	res.json({
-		message: 'Welcome to our API!'
+		message: 'Welcome to our API'
 	})
 })
 
