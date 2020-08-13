@@ -14,3 +14,11 @@ Guided project for the **Node Testing 2** module.
 - [ ] type `npm run start:watch` to start the API.
 
 Please follow along as the instructor adds automated tests to the API.
+
+
+## Lecture notes
+
+- Does it return the expected status code?
+- Does it return the expected data format?
+- Does it return the expected data?
+  
